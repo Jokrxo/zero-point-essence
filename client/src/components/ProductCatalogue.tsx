@@ -288,75 +288,24 @@ export default function ProductCatalogue() {
               </div>
 
               {category.products.length > 0 ? (
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                   {category.products.map((product, idx) => (
-                    <Card key={idx} className="hover-elevate overflow-hidden" data-testid={`card-product-${category.id}-${idx}`}>
+                    <Card key={idx} className="hover-elevate overflow-hidden group" data-testid={`card-product-${category.id}-${idx}`}>
                       {'image' in product && product.image && (
-                        <div className="relative h-64 w-full overflow-hidden bg-muted">
+                        <div className="relative h-48 w-full overflow-hidden bg-muted">
                           <img 
                             src={product.image} 
                             alt={`${product.name} product`}
-                            className="w-full h-full object-cover object-top"
+                            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
                             data-testid={`img-product-${category.id}-${idx}`}
                           />
                         </div>
                       )}
-                      <CardHeader>
-                        <CardTitle className="text-xl font-heading flex items-center justify-between" data-testid={`text-product-name-${category.id}-${idx}`}>
+                      <CardHeader className="p-4">
+                        <CardTitle className="text-base font-heading text-center" data-testid={`text-product-name-${category.id}-${idx}`}>
                           {product.name}
-                          <Badge variant="secondary" className="ml-2">Price: neg.</Badge>
                         </CardTitle>
-                        <CardDescription className="text-sm" data-testid={`text-product-description-${category.id}-${idx}`}>
-                          {product.description}
-                        </CardDescription>
                       </CardHeader>
-                      <CardContent className="space-y-4">
-                        {product.additionalInfo && (
-                          <p className="text-sm text-muted-foreground">{product.additionalInfo}</p>
-                        )}
-                        
-                        {product.subtitle && (
-                          <p className="text-sm font-semibold">{product.subtitle}</p>
-                        )}
-                        
-                        {product.benefits && (
-                          <div>
-                            <ul className="space-y-1 text-sm" data-testid={`list-product-benefits-${category.id}-${idx}`}>
-                              {product.benefits.map((benefit, bidx) => (
-                                <li key={bidx} className="flex items-start gap-2">
-                                  <span className="text-primary mt-1">•</span>
-                                  <span>{benefit}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-
-                        {'features' in product && product.features && (
-                          <div>
-                            <p className="text-sm font-semibold mb-2">
-                              {product.name} benefits include:
-                            </p>
-                            <ul className="space-y-1 text-sm">
-                              {product.features.map((feature: string, fidx: number) => (
-                                <li key={fidx} className="flex items-start gap-2">
-                                  <span className="text-primary mt-1">•</span>
-                                  <span>{feature}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-
-                        <Button 
-                          variant="outline" 
-                          className="w-full mt-4"
-                          onClick={() => console.log(`Inquiry for ${product.name}`)}
-                          data-testid={`button-inquiry-${category.id}-${idx}`}
-                        >
-                          Request Information
-                        </Button>
-                      </CardContent>
                     </Card>
                   ))}
                 </div>

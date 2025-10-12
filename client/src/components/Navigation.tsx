@@ -1,7 +1,8 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -21,8 +22,8 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 hover-elevate active-elevate-2 px-2 py-1 rounded-md">
-            <Sparkles className="h-6 w-6 text-primary" data-testid="logo-icon" />
+          <Link href="/" className="flex items-center gap-3 hover-elevate active-elevate-2 px-2 py-1 rounded-md">
+            <img src={logo} alt="Stella Lumen Logo" className="h-10 w-10 object-contain" data-testid="logo-image" />
             <span className="text-xl font-heading font-bold" data-testid="logo-text">Stella Lumen</span>
           </Link>
 
