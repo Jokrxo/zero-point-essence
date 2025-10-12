@@ -1,0 +1,20 @@
+You are an expert full-stack web developer using VS Code as your primary IDE. Your task is to implement a complete, responsive website for "Stella Lumen"[](https://stella-lumen.com/) based on the following review and improvement strategy. Build it as a static site using HTML5, CSS3 (with Flexbox/Grid for layout), and vanilla JavaScript for interactions—no frameworks like React unless specified. Use a simple folder structure: index.html (homepage), about.html, services.html, clients.html, blog.html, contact.html; shared CSS/JS in assets folder. Host placeholders for future integrations (e.g., Google Analytics script tag).
+
+Key Requirements from Strategy:
+- **Theme & Design**: Cosmic palette (navy blues #001F3F, golds #FFD700, starry gradients via CSS linear-gradient). Fonts: Montserrat (headers via Google Fonts), Open Sans (body). Hero banner: Full-width starry sky background image (use a free placeholder like Unsplash starry sky; alt text: "Starry galaxy sky"). Subtle JS animations (twinkling stars on scroll using CSS keyframes). Mobile-first responsive design (media queries for <768px; test in VS Code Live Server).
+- **Content Population**:
+  - "WHO WE ARE" (H1): Expand to 250 words on unique value (e.g., "Stella Lumen guides individuals and organizations to prosperity through innovative leadership coaching and AI-driven goal-tracking tools. Discover a galaxy of stars within you and reach for unparalleled success.").
+  - "OUR SERVICES" (H2): 4 offerings as cards (e.g., Leadership Coaching: Bullet benefits like "Personalized strategies to boost team performance"; use semantic HTML lists).
+  - "HAPPY CLIENTS" (H2): 5 testimonials as quote blocks with metrics (e.g., "Increased revenue by 40% – Anonymous Corp").
+  - Add founder bio snippet under "Journey to the Stars" (H3).
+  - SEO: <title>Stella Lumen: Guiding You to Prosperity | Innovative Success Solutions</title>; <meta name="description" content="Achieve business success with our prosperity coaching and goal-tracking solutions."> Use H1-H3 hierarchy; keywords like "achieve goals," "business success."
+- **Navigation & UX**: Sticky top nav bar (Home | About | Services | Clients | Blog | Contact) with active states. Footer: Social icons (LinkedIn/X links as placeholders), copyright. Single-page scroll feel on homepage (sections: Hero, Who We Are, Services, Clients, CTA). Breadcrumbs on subpages. Hero CTA button: "Start Your Journey – Free Consultation" linking to contact form.
+- **Interactive Elements**: Contact form (HTML form with name/email/goal fields; JS validation for required fields, submit alert). Newsletter signup (simple input + button). Images: 3 high-res placeholders (e.g., team collaboration; alt: "Team collaborating on success strategy").
+- **Functionality & Tech**: Ensure <3s load (minify CSS/JS if needed). HTTPS-ready (comment for deployment). Add GA placeholder script. Compress images via VS Code extensions. Fix any incompleteness (full pages, no broken links).
+- **Roadmap Phasing in VS Code**:
+  - Quick Wins (Commit 1): Basic HTML structure, nav, SEO metas, service bullets, color scheme.
+  - Medium-Term (Commit 2): Hero images, CTA forms, testimonials, analytics setup comment.
+  - Long-Term (Commit 3): Blog page stub, custom animations, user testing notes (e.g., accessibility checks via VS Code Lighthouse extension).
+- **Metrics/Testing**: After build, note targets (bounce <50%, etc.). Use VS Code extensions: Live Server, Prettier, HTML CSS Support. Output clean, commented code. Generate a ZIP of the project folder and a README.md with deployment steps (e.g., to Netlify).
+
+Provide the full code files, explain changes in comments, and ensure WCAG basics (alt texts, semantic tags). Aim for a polished, engaging site that converts visitors.
