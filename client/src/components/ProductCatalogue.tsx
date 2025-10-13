@@ -292,11 +292,11 @@ export default function ProductCatalogue() {
                   {category.products.map((product, idx) => (
                     <Card key={idx} className="hover-elevate overflow-hidden" data-testid={`card-product-${category.id}-${idx}`}>
                       {'image' in product && product.image && (
-                        <div className="relative h-64 w-full overflow-hidden bg-muted">
+                        <div className="relative aspect-square w-full overflow-hidden bg-muted">
                           <img 
                             src={product.image} 
                             alt={`${product.name} product`}
-                            className="w-full h-full object-cover object-top"
+                            className="w-full h-full object-contain p-4"
                             data-testid={`img-product-${category.id}-${idx}`}
                           />
                         </div>
