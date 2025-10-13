@@ -288,24 +288,62 @@ export default function ProductCatalogue() {
               </div>
 
               {category.products.length > 0 ? (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   {category.products.map((product, idx) => (
-                    <Card key={idx} className="hover-elevate overflow-hidden group" data-testid={`card-product-${category.id}-${idx}`}>
+                    <Card key={idx} className="hover-elevate overflow-hidden" data-testid={`card-product-${category.id}-${idx}`}>
                       {'image' in product && product.image && (
-                        <div className="relative h-48 w-full overflow-hidden bg-muted">
+                        <div className="relative h-64 w-full overflow-hidden bg-muted">
                           <img 
                             src={product.image} 
                             alt={`${product.name} product`}
-                            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover object-top"
                             data-testid={`img-product-${category.id}-${idx}`}
                           />
                         </div>
                       )}
-                      <CardHeader className="p-4">
-                        <CardTitle className="text-base font-heading text-center" data-testid={`text-product-name-${category.id}-${idx}`}>
+                      <CardHeader>
+                        <CardTitle className="text-xl font-heading" data-testid={`text-product-name-${category.id}-${idx}`}>
                           {product.name}
                         </CardTitle>
+                        <CardDescription className="text-base" data-testid={`text-product-description-${category.id}-${idx}`}>
+                          {product.description}
+                        </CardDescription>
                       </CardHeader>
+                      <CardContent className="space-y-4">
+                        {'additionalInfo' in product && product.additionalInfo && (
+                          <p className="text-sm text-muted-foreground">
+                            {product.additionalInfo}
+                          </p>
+                        )}
+                        
+                        {'subtitle' in product && product.subtitle && (
+                          <p className="text-sm font-medium">
+                            {product.subtitle}
+                          </p>
+                        )}
+                        
+                        {'benefits' in product && product.benefits && product.benefits.length > 0 && (
+                          <div>
+                            <h4 className="text-sm font-semibold mb-2">Key Benefits:</h4>
+                            <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                              {product.benefits.map((benefit, bIdx) => (
+                                <li key={bIdx}>{benefit}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        
+                        {'features' in product && product.features && product.features.length > 0 && (
+                          <div>
+                            <h4 className="text-sm font-semibold mb-2">Features:</h4>
+                            <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                              {product.features.map((feature, fIdx) => (
+                                <li key={fIdx}>{feature}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </CardContent>
                     </Card>
                   ))}
                 </div>
