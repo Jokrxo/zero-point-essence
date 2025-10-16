@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import StarField from "./StarField";
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export default function Hero() {
   return (
@@ -14,6 +15,11 @@ export default function Hero() {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+        <img 
+          src={logo} 
+          alt="Stella Lumen Logo" 
+          className="mx-auto mb-8 w-32 h-32 object-contain"
+        />
         <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6" data-testid="text-hero-title">
           Guiding You to Prosperity
         </h1>

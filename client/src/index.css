@@ -64,6 +64,10 @@
 
   --accent-foreground: 0 0% 100%;
 
+  --burgundy: 345 100% 25%;
+
+  --burgundy-foreground: 0 0% 100%;
+
   --destructive: 0 72% 51%;
 
   --destructive-foreground: 0 0% 98%;
@@ -120,6 +124,10 @@
   /* Fallback for older browsers */
   --destructive-border: hsl(var(--destructive));
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --burgundy-border: hsl(var(--burgundy));
+  --burgundy-border: hsl(from hsl(var(--burgundy)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
 .dark {
@@ -182,6 +190,10 @@
 
   --accent-foreground: 0 0% 100%;
 
+  --burgundy: 345 100% 35%;
+
+  --burgundy-foreground: 0 0% 100%;
+
   --destructive: 0 72% 51%;
 
   --destructive-foreground: 0 0% 98%;
@@ -230,6 +242,10 @@
   /* Fallback for older browsers */
   --destructive-border: hsl(var(--destructive));
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
+
+  /* Fallback for older browsers */
+  --burgundy-border: hsl(var(--burgundy));
+  --burgundy-border: hsl(from hsl(var(--burgundy)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
 @layer base {
