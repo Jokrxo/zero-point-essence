@@ -32,7 +32,7 @@ export default function Navigation() {
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
                 <Button
-                  variant={location === item.path ? "secondary" : "ghost"}
+                  variant={location === item.path ? "burgundy" : "ghost"}
                   data-testid={`link-nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}
@@ -59,7 +59,7 @@ export default function Navigation() {
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
                 <Button
-                  variant={location === item.path ? "secondary" : "ghost"}
+                  variant={location === item.path ? "burgundy" : "ghost"}
                   className="w-full justify-start"
                   onClick={() => setMobileMenuOpen(false)}
                   data-testid={`link-mobile-${item.label.toLowerCase()}`}

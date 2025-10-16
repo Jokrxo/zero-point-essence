@@ -279,7 +279,7 @@ export default function ProductCatalogue() {
           {categories.map((category) => (
             <div key={category.id} className="space-y-6" data-testid={`section-category-${category.id}`}>
               <div className="flex items-center gap-4">
-                <Badge variant="outline" className="text-lg px-4 py-1 font-heading">
+                <Badge variant="outline" className="text-lg px-4 py-1 font-heading bg-burgundy/10 text-burgundy border-burgundy/30">
                   {category.id}
                 </Badge>
                 <h3 className="text-2xl md:text-3xl font-heading font-bold" data-testid={`text-category-${category.id}`}>
