@@ -1,19 +1,19 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import perseusImg from "@assets/Stella Lumen Product Catalogue_page-0005_1760006988519.jpg";
-import polarisImg from "@assets/Stella Lumen Product Catalogue_page-0006_1760006988520.jpg";
-import epiphanyImg from "@assets/Stella Lumen Product Catalogue_page-0007_1760006988520.jpg";
+import perseusImg from "@/assets/products/Perseus.jpg";
+import polarisImg from "@/assets/products/Polaris.jpg";
+import epiphanyImg from "@/assets/products/Epiphany.jpg";
 import orionImg from "@assets/Stella Lumen Product Catalogue_page-0008_1760006988521.jpg";
 import betelgeuseImg from "@assets/Stella Lumen Product Catalogue_page-0009_1760006988521.jpg";
 import sirusImg from "@assets/Stella Lumen Product Catalogue_page-0011_1760006988523.jpg";
 import tzArietisImg from "@assets/Stella Lumen Product Catalogue_page-0012_1760006988523.jpg";
-import daraImg from "@assets/Stella Lumen Product Catalogue_page-0014_1760006988524.jpg";
-import rigelBusinessImg from "@assets/Stella Lumen Product Catalogue_page-0016_1760006988525.jpg";
-import canopusImg from "@assets/Stella Lumen Product Catalogue_page-0017_1760006988525.jpg";
+import daraImg from "@/assets/products/Dara.jpg";
+import rigelBusinessImg from "@/assets/products/Rigel.jpg";
+import canopusImg from "@/assets/products/Canopus.jpg";
 import venusImg from "@assets/Stella Lumen Product Catalogue_page-0018_1760006988525.jpg";
-import rigelPersonalImg from "@assets/Stella Lumen Product Catalogue_page-0020_1760006988526.jpg";
-import kielzImg from "@assets/Stella Lumen Product Catalogue_page-0022_1760006988527.jpg";
+import rigelPersonalImg from "@/assets/products/Rigel-Personal.png";
+import kielzImg from "@/assets/products/Kielz.jpg";
 
 const categories = [
   {
