@@ -6,12 +6,12 @@ import polarisImg from "@/assets/products/Polaris.jpg";
 import epiphanyImg from "@/assets/products/Epiphany.jpg";
 import orionImg from "@assets/Stella Lumen Product Catalogue_page-0008_1760006988521.jpg";
 import betelgeuseImg from "@assets/Stella Lumen Product Catalogue_page-0009_1760006988521.jpg";
-import sirusImg from "@assets/Stella Lumen Product Catalogue_page-0011_1760006988523.jpg";
-import tzArietisImg from "@assets/Stella Lumen Product Catalogue_page-0012_1760006988523.jpg";
+import sirusImg from "@/assets/products/Sirius.jpg";
+import tzArietisImg from "@/assets/products/TZ-Arietis.jpg";
 import daraImg from "@/assets/products/Dara.jpg";
 import rigelBusinessImg from "@/assets/products/Rigel.jpg";
 import canopusImg from "@/assets/products/Canopus.jpg";
-import venusImg from "@assets/Stella Lumen Product Catalogue_page-0018_1760006988525.jpg";
+import venusImg from "@/assets/products/Venus.jpg";
 import rigelPersonalImg from "@/assets/products/Rigel-Personal.png";
 import kielzImg from "@/assets/products/Kielz.jpg";
 
