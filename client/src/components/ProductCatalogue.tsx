@@ -6,7 +6,7 @@ import polarisImg from "@/assets/products/Polaris.jpg";
 import epiphanyImg from "@/assets/products/Epiphany.jpg";
 import orionImg from "@/assets/products/Orion.png";
 import betelgeuseImg from "@/assets/products/Betelgeuse.png";
-import sirusImg from "@/assets/products/Sirius.jpg";
+import siriusImg from "@/assets/products/Sirius.jpg";
 import tzArietisImg from "@/assets/products/TZ-Arietis.jpg";
 import daraImg from "@/assets/products/Dara.jpg";
 import rigelBusinessImg from "@/assets/products/Rigel.jpg";
@@ -107,8 +107,8 @@ const categories = [
     name: "Public Sector",
     products: [
       {
-        name: "Sirus",
-        image: sirusImg,
+        name: "Sirius",
+        image: siriusImg,
         description: "SIRUS is a system that manages and integrates procurement stages related to the acquisition of goods and services in a manner that facilitates efficiency, transparency, and compliance with policies and regulations.",
         subtitle: "SIRUS provides the following:",
         benefits: [
