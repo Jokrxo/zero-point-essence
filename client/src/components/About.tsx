@@ -101,30 +101,27 @@ export default function About() {
         </div>
 
         {/* Our Business Model Section */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-burgundy mb-12 text-center">
             Our Business Model
           </h2>
 
-          <div className="relative">
+          <div className="relative pl-4 md:pl-0">
             {/* Connecting line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-burgundy/20 via-burgundy/40 to-burgundy/20 hidden md:block"></div>
+            <div className="absolute left-12 md:left-8 top-12 bottom-12 w-0.5 bg-burgundy/30"></div>
             
-            <div className="space-y-8">
-              {businessModelSteps.map((step, idx) => (
+            <div className="space-y-6">
+              {businessModelSteps.map((step) => (
                 <div 
                   key={step.number}
-                  className="relative"
-                  style={{ paddingLeft: idx > 0 ? `${idx * 2}rem` : '0' }}
+                  className="relative flex gap-6 items-start animate-fade-in"
                 >
-                  <div className="flex gap-6 items-start">
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full border-4 border-burgundy bg-background flex items-center justify-center relative z-10">
-                      <span className="text-2xl font-bold text-burgundy">{step.number}</span>
-                    </div>
-                    <div className="flex-1 pt-2">
-                      <h3 className="text-xl font-heading font-bold mb-2">{step.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-                    </div>
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full border-4 border-burgundy bg-background flex items-center justify-center relative z-10 transition-transform duration-300 hover:scale-110">
+                    <span className="text-2xl font-bold text-burgundy">{step.number}</span>
+                  </div>
+                  <div className="flex-1 pt-2 pb-2">
+                    <h3 className="text-xl font-heading font-bold mb-2 text-foreground">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
