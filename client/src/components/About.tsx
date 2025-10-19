@@ -1,5 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 import teamMeetingImg from "@/assets/team-meeting.jpg";
+import teamGroupImg from "@/assets/team-group.jpg";
 
 export default function About() {
   const businessModelSteps = [
@@ -79,7 +80,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="space-y-6">
               <div className="relative">
                 <img 
                   src={teamMeetingImg} 
@@ -87,6 +88,13 @@ export default function About() {
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-burgundy/20 rounded-lg -z-10"></div>
+              </div>
+              <div className="relative">
+                <img 
+                  src={teamGroupImg} 
+                  alt="Stella Lumen team members"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>

@@ -2,15 +2,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
 import { Link } from "wouter";
-import ceoPortrait from "@/assets/ceo-portrait.jpg";
-import lusandaImg from "@/assets/team/lusanda.jpg";
-import lizoImg from "@/assets/team/lizo.jpg";
+import thabaniImg from "@/assets/team/thabani.jpg";
+import lusandaImg from "@/assets/team/lusanda-new.jpg";
+import lizoImg from "@/assets/team/lizo-new.jpg";
 
 const teamMembers = [
   {
     name: "Thabani Zulu - CA (SA)",
     role: "CHAIRMAN",
-    image: ceoPortrait,
+    image: thabaniImg,
     social: {
       facebook: "#",
       twitter: "#",
