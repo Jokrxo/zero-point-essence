@@ -1,4 +1,4 @@
-import Testimonials from "@/components/Testimonials";
+import Team from "@/components/Team";
 import { Link } from "wouter";
 import { ChevronRight } from "lucide-react";
 
@@ -10,11 +10,11 @@ export default function ClientsPage() {
           <div className="flex items-center gap-2 text-sm text-muted-foreground" data-testid="breadcrumb">
             <Link href="/" className="hover:text-foreground">Home</Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-foreground">Clients</span>
+            <span className="text-foreground">Team</span>
           </div>
         </div>
       </div>
-      <Testimonials />
+      <Team />
     </div>
   );
 }
