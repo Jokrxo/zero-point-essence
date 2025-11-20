@@ -1,0 +1,21 @@
+
+[update]
+newversion=1.0.0.0
+localversion={EXEPATH}
+
+[files]
+count=1
+
+[file1]
+url=Stella-Lumen.com/RigelBusiness.cab
+newversion=1.0.0.0
+localversion={EXEPATH}
+compressed=0
+mandatory=1
+hidden=1
+
+[application]
+appupdate=1
+silentrestart=1
+appname=Rigel Desktop Basic AFS System v2 FINAL.exe
+appcomps=RigelBusiness.cab
